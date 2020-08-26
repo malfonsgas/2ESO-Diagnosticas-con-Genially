@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>2ESO-1-NUMBERS-Surf in Biarritz-2</title>
+	<link rel="stylesheet" type="text/css" href="css/css-ACT.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Red+Rose&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<header>
+		<h1>  2º ESO - MATHS  online  ACTIVITIES</h1>
+		
+		<h2>SURFING MATHS-2ND ACTIVITY</h2>
+		<p class="Linea_titulo">  </p>
+		<p class="Cita"><strong> Education </strong> is not the learning of facts, but the training of the mind to think (Albert Einstein)</p>
+		<p class="Datos_Usuario">Usuario:XXXXXXX</p>
+	</header>
+	
+
+	<main>
+
+		<div id="Contenido">
+			<h3>READ THE FOLLOWING TEXT</h3>
+			<div class="Enunciado">
+				<div class="Problema">   
+					<p><strong>Pocket money</strong> is a small amount of money given to a child by their parents, typically on a regular basis. It is also a small amount of money suitable for minor expenses.</p>
+					<p>Andoni has got <strong>120€</strong> to spend during the trip. <strong>His grandparents</strong> gave him 3/8 of this amount, <strong>his aunt</strong> 2/15 and <strong>his elder brother</strong> 25%.  <strong>His parents</strong> gave him the rest</p>
+				</div>
+				<figure>
+					<img class="Imagen_Problema" src="https://s3-eu-west-1.amazonaws.com/uploads.playbaamboozle.com/uploads/images/19125/1585464319_149674" width="200">
+				</figure>
+			</div>
+	  		
+	    	<h3>Questions</h3>
+	  		&nbsp;
+
+			<!--Apartado de solución con formato grid-->
+			<div class="Bloque-Soluciones">
+				
+					<!--PRIMERA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_1">
+						<label for="respuesta1" class="Pregunta"><strong>1st Question:</strong> Who has given him more money?</label>
+						<select name="respuesta1" id="respuesta1">
+	  						<option value="His aunt">His aunt</option>
+	  						<option value="His grandparents">His grandparents</option><option value="His elder brother">His elder brother</option>
+	  						<option value="His parents">His parents</option>
+						</select>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto1">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto1">
+					</div>
+
+					
+
+					<!--SEGUNDA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_2">
+						<p class="Pregunta">
+							<strong>2nd Question:</strong> How much money have his parents given to him?
+						</p>
+						<input type="text" class="formulario__input" name="respuesta2" id="respuesta2" placeholder="Express in Euros" size=20px>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto2">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto2">
+					</div>	
+
+					<!--TERCERA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_3">
+						<p class="Pregunta">
+							<strong>3th Question:</strong> How much money would he have for the trip if his aunt had forgot to give him the money?
+						</p>
+						<input type="text" class="formulario__input" name="respuesta3" id="respuesta3" placeholder="Express in Euros" size=20px>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto3">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto3">
+					</div>	
+
+					<!--CUARTA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_4">
+						<label for="respuesta4" class="Pregunta"><strong>4th Question:</strong> In case that his aunt forgot to give him the money, which fraction represents the part that he has received from his elder brother?</label>
+						<select name="respuesta1" id="respuesta4">
+	  						
+	  						<option value="1/4">1/4</option>
+	  						<option value="3/11">3/11</option>
+	  						<option value="13/15">13/15</option>
+	  						<option value="15/52">15/52</option>
+						</select>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto4">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto4">
+					</div>	
+				
+					&nbsp;
+
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button  class="formulario__btn" onclick="comprobar2()">Chech your answers</button>
+				
+				</div>
+
+
+
+		</div>
+		</div>
+
+		<p class="Codigo" id="Codigo"> The secret letter is B</p>
+	</main>
+
+<script src="js/comprobar2.js"></script>
+
+<!--<script>
+	function comprobar1(){
+	var Respuesta1=document.getElementById("respuesta1").value;
+	var Respuesta2=document.getElementById("respuesta2").value;
+
+	
+
+	if (Respuesta1=="t=d/80"){
+	 	document.getElementById("Correcto1").style='display:block';
+	 	document.getElementById("Incorrecto1").style='display:none';
+	} else{
+		document.getElementById("Correcto1").style='display:none';
+		document.getElementById("Incorrecto1").style='display:block';
+	}
+
+
+	if (Respuesta2==90){
+	 	document.getElementById("Correcto2").style='display:block';
+	 	document.getElementById("Incorrecto2").style='display:none';
+	} else{
+		document.getElementById("Incorrecto2").style='display:block';
+		document.getElementById("Correcto2").style='display:none';
+	}
+	if ((Respuesta2==90) && (Respuesta1=="t=d/80")){
+		document.getElementById("Codigo").style='display:block';
+
+	}
+
+
+}
+</script>
+-->	
+
+</body>
+</html>

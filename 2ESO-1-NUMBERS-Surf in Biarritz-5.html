@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>2ESO-1-NUMBERS-Surf in Biarritz-5</title>
+	<link rel="stylesheet" type="text/css" href="css/css-ACT5.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Red+Rose&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<header>
+		<h1>  2º ESO - MATHS  online  ACTIVITIES</h1>
+		
+		<h2>SURFING MATHS-5TH ACTIVITY</h2>
+		<p class="Linea_titulo">  </p>
+		<p class="Cita"><strong> Education </strong> is not the learning of facts, but the training of the mind to think (Albert Einstein)</p>
+		<p class="Datos_Usuario">Usuario:XXXXXXX</p>
+	</header>
+	
+
+	<main>
+
+		<div id="Contenido">
+			<h3>READ THE FOLLOWING TEXT</h3>
+			<div class="Enunciado">
+				<div class="Problema">   
+					<p>Your instructor has explained that when you surf, there are several forces at work. </p>
+					<p>The forces of gravity and buoyancy are working against each other. <strong>Gravity</strong> is pulling the surfboard <strong>down</strong>. <strong>Buoyancy</strong> is pushing it <strong>up</strong>. Which force is greater? It depends on the <strong>density of the surfboard’s materials</strong>. As you can guess, the materials used in surfboards today are much lighter and less dense than the wooden materials used in the past.</p>
+					<p>The surfboard you are going to use, is made with foam in the interior, coated with fibre and polyester. It has a <strong>density of 30.44 kg/m<sup>3</sup></strong>. </p>
+					<p>The <strong>volume</strong> of your board is a measurement of the total amount of space that your board occupies. Volume helps you to catch waves. It helps you to paddle easier and it helps you to get going when the waves are small, or flat.</p>
+					<p>The volume of the board you need <strong>depends on your weigh.</strong>  In your case, you need a 55 litres board. </p>
+				</div>
+				<figure>
+					<img class="Imagen_Problema" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://surfsimply.com/wp-content/uploads/2015/03/Surfboard-Volume-examples_FW.jpg" height="" ="200">
+				</figure>
+			</div>
+	  		
+	    	<h3>Questions</h3>
+	  		&nbsp;
+
+			<!--Apartado de solución con formato grid-->
+			<div class="Bloque-Soluciones">
+				
+					<!--PRIMERA PREGUNTA-->
+					<div class="Contenedor">
+						<div class="ACT_Grupo1" id="ACT_Grupo_1">
+							<p class="Pregunta"><strong>1st Question:</strong> Which statements are right?</p>
+														
+							<input type="checkbox" class="OpcionCheck" id="afirm1" name="afirm1" value="1000/30">
+							<label for="afirm1" class="TextoCheck"> a) A volume of 1000 litres weighs 30.44kg</label><br>
+
+							<input type="checkbox" class="OpcionCheck" id="afirm2" name="afirm2" value="1000/30">
+							<label for="afirm2" class="TextoCheck"> b)	A volume of 1 litre weighs 30.44kg</label><br>
+
+							<input type="checkbox" class="OpcionCheck" id="afirm3" name="afirm3" value="1000/30">
+							<label for="afirm3" class="TextoCheck"> c)	A volume of 10<sup>3</sup> litre weighs 30.44·10<sup>3</sup>kg </label><br>
+
+							<input type="checkbox" class="OpcionCheck" id="afirm4" name="afirm4" value="1000/30">
+							<label for="afirm4" class="TextoCheck"> d)	A volume of 10<sup>3</sup> litre weighs 30.44·10<sup>3</sup> g </label><br>
+
+							<input type="checkbox" class="OpcionCheck" id="afirm5" name="afirm5" value="1000/30">
+							<label for="afirm5" class="TextoCheck"> e) A volume of 1 litre weighs 30.44g</label><br>
+
+			    		</div>	
+			    		<div class="Imagenes">
+								<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto1">
+			    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto1">
+			    		</div>	    		
+		    		</div>
+
+					&nbsp;
+
+					<!--SEGUNDA PREGUNTA-->
+					<div class="ACT_Grupo2" id="ACT_Grupo_2">
+						<p class="Pregunta">
+							<strong>2nd Question:</strong> How much does your board weigh?
+						</p>
+						<input type="text" class="InputText" name="respuesta2" id="respuesta2" placeholder="In kilograms. Round it to the nearest tenth" size=40px>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto2">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto2">
+					</div>	
+
+
+					&nbsp;
+
+					<!--TERCERA PREGUNTA-->
+					<div class="ACT_Grupo3" id="ACT_Grupo_3">
+						<label for="respuesta3" class="Pregunta"><strong>3th Question:</strong> What do you think Buoyancy (or buoyant force) mean?</label>
+						<select name="respuesta3" id="respuesta3">
+	  						<option value="false1">It is the force exerted on an object that makes it fall down on earth</option>
+	  						<option value="false2">It is the force that occurs when a deformed object tries to return to its original shape</option>
+	  						<option value="false3">It is the force exerted on an object that is wholly or partly immersed only in water</option>
+	  						<option value="right">It is the force exerted on an object that is wholly or partly immersed in a fluid</option>
+						</select>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto3">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto3">
+					</div>
+
+
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button class="formulario__btn" onclick="comprobar5()">Chech your answers</button>
+				</div>
+
+
+
+
+			</div>
+		</div>
+
+		<p class="Codigo" id="Codigo"> The secret letter is O</p>
+
+	</main>
+
+	<script src="js/comprobar5.js"></script>
+
+</body>
+</html>

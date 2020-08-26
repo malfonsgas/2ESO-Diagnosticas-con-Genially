@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>2ESO-1-NUMBERS-Surf in Biarritz-4</title>
+	<link rel="stylesheet" type="text/css" href="css/css-ACT.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Red+Rose&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<header>
+		<h1>  2º ESO - MATHS  online  ACTIVITIES</h1>
+		
+		<h2>SURFING MATHS-4TH ACTIVITY</h2>
+		<p class="Linea_titulo">  </p>
+		<p class="Cita"><strong> Education </strong> is not the learning of facts, but the training of the mind to think (Albert Einstein)</p>
+		<p class="Datos_Usuario">Usuario:XXXXXXX</p>
+	</header>
+	
+
+	<main>
+
+		<div id="Contenido">
+			<h3>READ THE FOLLOWING TEXT</h3>
+			<div class="Enunciado">
+				<div class="Problema">   
+					<p><strong>Youth hostels</strong> are an invaluable resource to backpackers, and enable young people and students to travel from place to place without blowing that all important budget in the first few days. Cheap, basic, friendly and safe, they are the perfect place to meet fellow travellers and bed down for the night.</p>
+
+					<p>We want to book accommodation in one youth hostel in Biarritz and we need to know the number of rooms we will need. </p>
+
+					<p>There are 48 girls and 42 boys. To <strong>organize rooms</strong> we have to consider that:</p>
+					<ol>
+						<li>We need to book the <strong>least number of rooms.</strong></li>
+						<li>There must be the <strong>same number of people</strong> in each room. </li>
+						<li>Girls and boys are <strong>not mixed.</strong> </li>
+					</ol>
+				</div>
+				<figure>
+					<img class="Imagen_Problema" src="https://hotel-sindika.com/wp-content/uploads/sites/3/2018/02/cuna.png" width="200">
+				</figure>
+			</div>
+	  			&nbsp;
+	    	<h3>Questions</h3>
+	  		&nbsp;
+
+			<!--Apartado de solución con formato grid-->
+			<div class="Bloque-Soluciones">
+				
+					<!--PRIMERA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_1">
+						<label for="respuesta1" class="Pregunta"><strong>1st Question:</strong> What do you think we should try to find out?</label>
+						<select name="respuesta1" id="respuesta1">
+	  						<option value="GCM">The greatest common multiple</option>
+	  						<option value="GCF">The greatest common factor</option>
+	  						<option value="LCM">The least common multiple</option>
+	  						<option value="LCF">The least common factor</option>
+	  					</select>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto1">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto1">
+					</div>
+				
+
+					<!--SEGUNDA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_2">
+						<p class="Pregunta">
+							<strong>2nd Question:</strong> How many people must be in each room then?
+						</p>
+						<input type="text" class="formulario__input" name="respuesta2" id="respuesta2" placeholder="Express in people" size=20px>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto2">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto2">
+					</div>	
+
+
+					<!--TERCERA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_3">
+						<p class="Pregunta">
+							<strong>3th Question:</strong> How many rooms do we need to book?
+						</p>
+						<input type="text" class="formulario__input" name="respuesta3" id="respuesta3" placeholder="Express in rooms" size=20px>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto3">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto3">
+					</div>	
+
+				
+					&nbsp;
+
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button  class="formulario__btn" onclick="comprobar4()">Chech your answers</button>
+				
+				</div>
+
+			</div>
+		</div>
+
+		<p class="Codigo" id="Codigo"> The secret letter is B</p>
+	</main>
+
+	<script src="js/comprobar4.js"></script>
+
+</body>
+</html>

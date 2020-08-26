@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>2ESO-1-NUMBERS-Surf in Biarritz-1</title>
+	<link rel="stylesheet" type="text/css" href="css/css-ACT.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Red+Rose&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<header>
+		<h1>  2º ESO - MATHS  online  ACTIVITIES</h1>
+		
+		<h2>SURFING MATHS-1ST ACTIVITY</h2>
+		<p class="Linea_titulo">  </p>
+		<p class="Cita"><strong> Education </strong> is not the learning of facts, but the training of the mind to think (Albert Einstein)</p>
+		<p class="Datos_Usuario">Usuario:XXXXXXX</p>
+	</header>
+	
+
+	<main>
+
+		<div id="Contenido">
+			<h3>READ THE FOLLOWING TEXT</h3>
+			<div class="Enunciado">
+				<div class="Problema">   
+					<p><strong>Surfing</strong> is a complete discipline that is practiced from an early age. The only constraint is to know how to swim!. The <strong>Côte des Basques</strong> beach in Biarritz is a perfect surf spot for all levels</p>
+					<p>At <strong>low tide</strong>, the waves are small and long, it is ideal for the initiation of beginners. At <strong>high tide</strong>, the beach disappears to make way for the waves which are getting stronger and sometimes form rollers, allowing the more experienced skiers worthy of the greatest champions.</p>
+					<p> Let´s focus on the bus journey. <strong>If “d” is the distance between Pamplona and Biarritz and considering that the average speed of the bus is 80km/h. </strong></p>
+				</div>
+				<figure>
+					<img class="Imagen_Problema" src="img/mapa.jpg" width="200">
+				</figure>
+			</div>
+	  		
+	    	<h3>Questions</h3>
+	  		&nbsp;
+
+			<!--Apartado de solución con formato grid-->
+			<div class="Bloque-Soluciones">
+				
+					<!--PRIMERA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_1">
+						<label for="respuesta1" class="Pregunta"><strong>1st Question:</strong> Which expression would you use to get the time in hours it takes to arrive to Biarritz?</label>
+						<select name="respuesta1" id="respuesta1">
+	  						<option value="t=80·d">t=80·d</option>
+	  						<option value="t=80/d">t=80/d</option>
+	  						<option value="t=d/80">t=d/80</option>
+	  						<option value="t=d-80">t=d-80</option>
+						</select>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto1">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto1">
+					</div>
+
+					
+
+					<!--SEGUNDA PREGUNTA-->
+					<div class="ACT_Grupo" id="ACT_Grupo_2">
+						<p class="Pregunta">
+							<strong>2nd Question:</strong> If Biarritz is located 120 km far from Pamplona. How long does it take to arrive then? Express it in minutes.
+						</p>
+						<input type="text" class="formulario__input" name="respuesta2" id="respuesta2" placeholder="Express in minutes" size=20px>
+						<img src="img/right.png" height="40" class="ImagenesCorreccion" id="Correcto2">
+	    				<img src="img/wrong.png" height="40" class="ImagenesCorreccion" id="Incorrecto2">
+					</div>	
+				
+					&nbsp;
+
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button  class="formulario__btn" onclick="comprobar1()">Chech your answers</button>
+				
+				</div>
+
+
+
+		</div>
+		</div>
+
+		<p class="Codigo" id="Codigo"> The secret letter is A</p>
+	</main>
+
+<script src="js/comprobar1.js"></script>
+
+<!--<script>
+	function comprobar1(){
+	var Respuesta1=document.getElementById("respuesta1").value;
+	var Respuesta2=document.getElementById("respuesta2").value;
+
+	
+
+	if (Respuesta1=="t=d/80"){
+	 	document.getElementById("Correcto1").style='display:block';
+	 	document.getElementById("Incorrecto1").style='display:none';
+	} else{
+		document.getElementById("Correcto1").style='display:none';
+		document.getElementById("Incorrecto1").style='display:block';
+	}
+
+
+	if (Respuesta2==90){
+	 	document.getElementById("Correcto2").style='display:block';
+	 	document.getElementById("Incorrecto2").style='display:none';
+	} else{
+		document.getElementById("Incorrecto2").style='display:block';
+		document.getElementById("Correcto2").style='display:none';
+	}
+	if ((Respuesta2==90) && (Respuesta1=="t=d/80")){
+		document.getElementById("Codigo").style='display:block';
+
+	}
+
+
+}
+</script>
+-->	
+
+</body>
+</html>

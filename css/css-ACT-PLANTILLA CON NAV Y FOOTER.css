@@ -1,0 +1,234 @@
+
+body{
+  background-color: #ABB2B9;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+header{
+  background: #FEFAF3;
+  padding: 1em;
+}
+
+nav,
+main,
+footer {
+  background: #FEF5E7;
+  padding: 1em;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+
+h1 {
+  width: 99%;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: black;
+  padding: 10px 10px;
+  margin: 0px;
+  color:black;
+  background-color:#d8ff00;
+  /*font-family: 'Bree Serif', serif;*/
+  font-weight: normal;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+h2{
+   width: 99%;
+   padding: 10px 10px;
+   margin: 0px;
+   background-image: url("file:D:/00-DOCUMENTOS/00-MAITE/100-PRUEBAS WEB/4-GENIALLY/img/textura.jpg"); 
+   background-color: #cccccc;
+   background-repeat: repeat;
+   text-align: center;
+   color: white;
+   font-weight: normal;
+   font-size: 4em;
+   font-family: Impact;
+   text-transform: uppercase;
+    }
+
+  p.Linea_titulo {
+   width: 99%;
+   height:3px;
+   margin: 0px;
+   background-image: url("file:D:/00-DOCUMENTOS/00-MAITE/100-PRUEBAS WEB/4-GENIALLY/img/linea.jpg"); 
+   background-repeat: repeat;
+    }
+
+ p.Cita {
+     width: 99%;
+     color: white;
+     font-size: 1.5em;
+     font-style: italic;
+     font-family: Calibri;
+     text-align: center;
+     margin: 0px;
+     padding: 10px 10px;   
+     background-image: url("file:D:/00-DOCUMENTOS/00-MAITE/100-PRUEBAS WEB/4-GENIALLY/img/textura.jpg"); 
+     background-repeat: repeat;
+      }
+
+p.Datos_Usuario {
+     width: 99%;
+     color: black;
+     font-size: 1em;
+     font-style: italic;
+     font-family: Comic Sans MS;
+     text-align: right;
+     margin: 0px;
+     padding: 10px 10px;   
+      }
+
+h3{
+   width: 98%;
+   padding: 6px 10px 6px 10px;
+   margin: 0px 0px 0px 0px;
+   background: #ECDFEC; 
+   text-align: left;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 2em;
+   font-family: Comic Sans MS;
+    }
+
+p.Instrucciones{
+    font-family: calibri;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    font-size: 1.6em;
+    text-align: justify;
+}
+
+div.Problema{
+    font-family: calibri;
+    font-size: 2em;
+}
+
+
+div.Bloque-Soluciones{
+  font-size: 2em;
+  font-family: calibri;
+  padding-right: 1.4em;
+  text-align: justify;
+}
+
+
+select{
+    padding-left: 3%;
+    font-family: calibri;
+    font-size: 1.5em;
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+
+}
+
+input{
+    padding-left: 3%;
+    font-family: calibri;
+    font-size: 1.5em;
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+
+}
+p.Titulo-Solucion-1{
+  text-decoration: underline;
+  color: #0442F6;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+p.Titulo-Solucion-2{
+ font-weight: bold;
+  
+}
+
+hr.Separador{
+  margin:5% 40%;
+}
+
+
+/*ESTRUCTURAMOS EL BODY*/
+
+body{
+  display:grid;
+  grid-gap: 0.5em;
+  grid-template-rows:auto 1fr auto;
+  grid-template-columns: 20% auto;
+  min-height: 90vh;
+}
+
+
+/* Dos formas de hacerlo. Esta es la primera
+
+@media (min-width: 40em) {
+  body {
+    grid-template-columns: 12em 1fr;
+    grid-template-rows: auto 1fr auto;
+
+  }
+}
+
+header{
+  grid-column: span 2;
+}
+
+nav{
+  grid-row: span 2;
+}
+*/
+
+/*La segunda*/
+
+@media (min-width: 40em) {
+  body {
+    grid-template-areas: 
+    'banner banner'
+    'nav main'
+    'nav footer'
+  }
+}
+
+header{grid-area:banner;}
+nav{grid-area:nav;}
+main{grid-area:main;}
+footer{grid-area: footer;}
+
+/********************************************/
+
+
+img{
+  display:block;
+  padding:5%;
+  
+}
+
+
+div.Enunciado{
+  display:grid;
+  grid-template-columns: 65% auto;
+}
+
+div.ACT_Grupo{
+  display:grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto auto;
+}
+
+.Pregunta{
+  grid-column: span 2;
+}
+
